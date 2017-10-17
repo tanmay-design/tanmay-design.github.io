@@ -1,0 +1,131 @@
+a:hover {
+  background-color: #ff6249;
+  transition: background-color 300ms ease-In-Out;
+}
+
+.divHeader {
+  position: fixed;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+
+.header {
+  height: 10vh;
+  display: flex;              /* establish flex container */
+    flex-direction: row;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+
+}
+
+.header ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.header ul li {
+  display: inline;
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #666666;
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.bar {
+  display: block;
+  margin: auto 0;
+  stroke:#333333;
+  stroke-width:1.5px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+}
+
+.header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cross {
+  display: block;
+  margin: auto 0;
+  stroke:#333333;
+  stroke-width:1.5px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+}
+
+
+#active {
+  opacity: 1;
+}
+
+.work {
+  display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    text-align: center;
+}
+
+#work1 {
+  height: 100vh;
+  background-image: url("1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip:
+  font: poppins;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+#heading {
+  letter-spacing: 6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.button {
+  background-color: none;
+    border: 1.5px solid #ff6249;
+    color: #ffffff;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 24px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+      transition: 200ms ease-In-Out;
+}
+
+.button:hover {
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 8px 60px;
+  color: #292f36;
+  letter-spacing: 4px;
+  transition: 200ms ease-In-Out;
+
+}
+
+
+.all {
+  max-width: 960px;
+  margin: 0 auto;
+}

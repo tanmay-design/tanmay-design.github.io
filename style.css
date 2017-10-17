@@ -1,0 +1,35 @@
+body {
+  background-color: #ffffff;
+  font-family: "Poppins";
+}
+
+#header {
+font-weight: bold;
+color: #333333;
+text-align: center;
+}
+
+.navbar {
+  text-align: center;
+  padding: 1% 0;
+}
+
+.mainDiv {
+  background-color: #333333;
+  padding: 250px 0;
+}
+#mainheader {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.footer {
+  height: 10%;
+  margin: auto;
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}

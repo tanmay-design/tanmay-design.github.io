@@ -1,0 +1,306 @@
+html {
+  height:100vh;
+  width: 100%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "Poppins";
+  overflow: hidden;
+}
+
+.social {
+  display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    text-align: center;
+}
+
+.social ul {
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social ul li {
+  text-align: center;
+  padding: 2vh 24px;
+}
+
+.social ul li svg line {
+  stroke:#292f36;
+  stroke-width:1px;
+}
+
+.social ul li a {
+  text-decoration: none;
+  color: #292f36;
+  font-weight: 400;
+
+}
+
+a:hover {
+  background-color: #ff6249;
+  transition: background-color 300ms ease-In-Out;
+}
+
+@-ms-keyframes wiggle{0%{-ms-transform:rotate(10deg);}50%{-ms-transform:rotate(-10deg);}100%{-ms-transform:rotate(10deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(10deg);}50%{-moz-transform:rotate(-10deg);}100%{-moz-transform:rotate(10deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(10deg);}50%{-webkit-transform:rotate(-10deg);}100%{-webkit-transform:rotate(10deg);}}
+@keyframes wiggle{0%{transform:rotate(10deg);}50%{transform:rotate(-10deg);}100%{transform:rotate(10deg);}}
+.socialMenu:hover{-ms-animation:wiggle .3s infinite;-moz-animation:wiggle .3s infinite;-webkit-animation:wiggle .3s infinite;animation:wiggle .3s infinite;}
+.socialMenu:hover {
+    background-color: #ff6249;
+    transition: background-color 500ms ease-In-Out;
+    border-radius: 50px ;
+
+}
+
+
+.header {
+  height: 10vh;
+  display: flex;              /* establish flex container */
+    flex-direction: row;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+
+}
+
+.header ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.header ul li {
+  display: inline;
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #292f36;
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.bar {
+  display: block;
+  margin: auto 0;
+  stroke:#292f36;
+  stroke-width:1.5px;
+  text-decoration: none;
+  color: #292f36;
+  font-weight: 400;
+}
+
+.header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cross {
+  display: block;
+  margin: auto 0;
+  stroke:#292f36;
+  stroke-width:1.5px;
+  text-decoration: none;
+  color: #292f36;
+  font-weight: 400;
+}
+
+
+#active {
+  opacity: 1;
+}
+
+.mainDiv {
+  position: relative;
+  background-color: #292f36;
+  color: #ffffff;
+  height: 80vh;
+}
+
+.mainBody {
+  height: 100%;
+  display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    line-height: 500px;
+ text-align: center;
+}
+
+#maincontent {
+  font-family: "PT-serif" ;
+  font-weight: 600;
+  font-size: 64px;
+  color: #ffffff;
+  letter-spacing: 0px;
+  position: absolute;
+}
+
+.hireme {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  z-index: 1;
+  margin: 0 auto;
+  display: block;              /* establish flex container */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    text-align: center;
+}
+
+.button {
+  background-color: none;
+    border: 1.5px solid #ff6249;
+    color: #ffffff;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+      transition: 200ms ease-In-Out;
+}
+
+.button:hover {
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 8px 60px;
+  color: #292f36;
+  letter-spacing: 4px;
+  transition: 200ms ease-In-Out;
+
+}
+
+
+.circlee1{
+    animation: spinner1 1.5s infinite linear;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    -ms-transform-origin: 50% 50%; /* IE 9 */
+    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+    transform-origin: 50% 50%;
+}
+
+@keyframes spinner1 {
+    0% { transform: rotate3d(1, 1, 1, 0deg); }
+    50% { transform: rotate3d(1, 1, 1, 180deg); }
+    100% { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
+.circlee2{
+    animation: spinner2 1.5s infinite linear;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    -ms-transform-origin: 50% 50%; /* IE 9 */
+    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+    transform-origin: 50% 50%;
+}
+
+@keyframes spinner2 {
+    100% { transform: rotate3d(1, 1, 1, 540deg); }
+    0% { transform: rotate3d(1, 1, 1, 180deg); }
+    50% { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
+.circlee3{
+    animation: spinner3 1.5s infinite linear;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    -ms-transform-origin: 50% 50%; /* IE 9 */
+    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+    transform-origin: 50% 50%;
+}
+
+@keyframes spinner3 {
+    50% { transform: rotate3d(1, 1, 1, -270deg); }
+    100% { transform: rotate3d(1, 1, 1, -450deg); }
+    0% { transform: rotate3d(1, 1, 1, -90deg); }
+}
+
+
+
+.work {
+  display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    text-align: center;
+}
+
+.work ul {
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work ul li {
+  text-align: center;
+  padding: 2vh 2px;
+}
+
+.work ul li svg line {
+  stroke:#292f36;
+  stroke-width:1px;
+}
+
+.work ul li a {
+  text-decoration: none;
+  color: #292f36;
+  font-weight: 400;
+  letter-spacing: 4px;
+
+}
+
+.verticalwork {
+
+}
+
+.footer {
+  height: 10vh;
+  display: flex;              /* establish flex container */
+    flex-direction: row;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+
+}
+
+.footer ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.footer ul li {
+  display: inline;
+  text-align: center;
+  padding: 16px 24px;
+  color: #292f36;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #292f36;
+  font-weight: 400;
+
+}
