@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
 html {
   height:100vh;
   width: 100%;
@@ -65,8 +67,8 @@ a:hover {
     flex-direction: row;     /* stack flex items vertically */
     justify-content: center;    /* center items vertically, in this case */
     align-items: center;        /* center items horizontally, in this case */
-
 }
+
 
 .header ul {
   list-style-type: none;
@@ -145,7 +147,14 @@ a:hover {
   color: #ffffff;
   letter-spacing: 0px;
   position: absolute;
+  transition: 200ms ease-In-Out;
 }
+
+#maincontent:hover {
+  text-shadow: -0.05em -0.05em 0 #4ecdc4,  0.05em 0.05em 0 #ff6249;
+  transition: 300ms ease-In-Out;
+}
+
 
 .hireme {
   position: absolute;
@@ -182,7 +191,7 @@ a:hover {
   padding: 8px 60px;
   color: #292f36;
   letter-spacing: 4px;
-  transition: 200ms ease-In-Out;
+  transition:300ms ease-In-Out;
 
 }
 
@@ -303,4 +312,21 @@ a:hover {
   color: #292f36;
   font-weight: 400;
 
+}
+
+@media all and (max-width:599px) {
+  .header ul li {
+    display: block;
+  }
+  #maincontent {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .mainBody svg {
+    width: 100vw;
+  }
+  .footer ul li {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
 }
