@@ -141,7 +141,7 @@ a:hover {
 }
 
 #maincontent {
-  font-family: "PT-serif" ;
+  font-family: 'PT Serif', serif;
   font-weight: 600;
   font-size: 64px;
   color: #ffffff;
