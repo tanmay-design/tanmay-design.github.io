@@ -30,6 +30,13 @@ $(document).ready(function(){
   	   document.getElementByClassName("circlee2").setAttribute("r", 60 );
        document.getElementByClassName("circlee1").setAttribute("r", 80 );
        document.getElementByClassName("circlee3").setAttribute("r", 100 );
-     }
+     };
+
+     $('#emtion').toggle(function () {
+         $("#emotion").addClass("active");
+     }, function () {
+         $("#emotion").removeClass("active");
+     });
+
 
 });
